@@ -16,6 +16,8 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 - Runs: 
    * A run in a word document is a continuous sequence of words having similar properties, such as similar font sizes, font shapes, and font styles.
    * Can use Runs once I've set the highlight color of words in the Word Doc. Highlighted words will be a Run and non-highlighted Runs will be another Run.
+   * Highlighting using Runs
+      * https://www.geeksforgeeks.org/working-with-highlighted-text-in-python-docx-module/
 
 - Headers
    * Info on creating Headers. Could be useful for setting each Chapter # as a Header, to provide an Outline to easily navigate the document with.
