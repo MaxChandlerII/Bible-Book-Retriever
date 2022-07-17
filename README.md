@@ -10,5 +10,13 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 - Headers
    * Info on creating Headers. Could be useful for setting each Chapter # as a Header, to provide an Outline to easily navigate the document with.
 
+
+# Committing 
+- Using Git Bash
+   * Using Git Bash, set user.name and user.email to your profile
+   * In Git Bash push commits up (git push origin main)
+   * Git Bash prompted me for credentials, opted for signing-in online (not the token option), authorized a Git Credential Manager, was prompted to enter password, was authorized
+      * Token option was not approved
+
 - Set user.name and user.email per Repo
    * https://www.git-tower.com/learn/git/faq/change-author-name-email
