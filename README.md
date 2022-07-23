@@ -61,3 +61,5 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* https://developers.google.com/workspace/guides/create-project
 2. Enable Google Docs API
 	* https://developers.google.com/workspace/guides/enable-apis
+3. pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+4. pip install --upgrade httplib2
