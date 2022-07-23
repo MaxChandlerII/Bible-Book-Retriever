@@ -11,6 +11,10 @@ This project will retrieve a book of the Bible, in the translation you desire, f
 - Set user.name and user.email per Repo
    * https://www.git-tower.com/learn/git/faq/change-author-name-email
 
+- Checking credentials entered
+	* git config --list --show-origin
+	* https://www.geeksforgeeks.org/how-to-set-git-username-and-password-in-gitbash/
+
 # Python Links/Libraries/Functions
 https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-docx-module/
 - Runs: 
@@ -30,15 +34,11 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 - Removing Chapter Headings
 	* perhaps the easiest way for this would be to look at the html for the text in the website and see if it differs from the "body" of the text and if it does and IF the user wants the chapter headings removed then go ahead and delete them. 
 	Or if they want to keep them perhaps have a table that stores the location of the header (like after these 3x words and before these 3x words) and then i know the location of the header and could paste it in with unique spacing before/after to help differentiate it from the "body" of the text
-	
-- Legal
-	* May need to post a legal disclaimer that any Bible translation has its own legal disclaimer and terms of use that the user is responsible for knowing and following and that this tool is in no way responsible for the user's use of that copy righted material.
-	* My tool itself may actually face restrictions in copy/pasting Bible translations for others to use? Perhaps when I paste any Bible translation I need to also paste that translation's legal disclaimer?
-	
+
 - Word/Phrase Highlighting
 	* May be venturing too far into a full-fledged tool like Logos or a tool like a Concordance. But, perhaps I offer a feature where the user can type a word or phrase and then the tool underlines/italicizes/bolds/sets font color/highlights that word/phrase all throughout the text they've requested? 
 	* Furthermore, perhaps I also provide a list of verses in which that word/phrase appears?
-	
+
 - Ease of Use
 	* In order to make it simple for others to use, I think it the final product should be an executable (.exe) that others can download.
 	
@@ -47,3 +47,13 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* Not everyone may have Microsoft Word. 
 		* May want to add a feature to securely connect to one's Google Docs?
 		* Are there mark-up/down languages tools that could be leveraged?
+	
+# Legal
+- May need to post a legal disclaimer that any Bible translation has its own legal disclaimer and terms of use that the user is responsible for knowing and following and that this tool is in no way responsible for the user's use of that copy righted material.
+- My tool itself may actually face restrictions in copy/pasting Bible translations for others to use? Perhaps when I paste any Bible translation I need to also paste that translation's legal disclaimer?
+
+# Setting Up Google Project / API
+(1) Set up Google Project
+	* https://developers.google.com/workspace/guides/create-project
+(2) Enable Google Docs API
+	* https://developers.google.com/workspace/guides/enable-apis
