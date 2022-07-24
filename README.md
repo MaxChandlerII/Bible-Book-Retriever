@@ -70,3 +70,5 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 6. Create an OAuth 2.0 Client ID
 	* https://developers.google.com/workspace/guides/create-credentials#desktop-app (see OAuth, used "Desktop Application")
 7. Download the OAuth Client in .json format, save as "credentials.json". Place in same folder as the .py file(s).
+8. Use Google's code to extract text from a Google Doc (don't forget to update w/your Doc's "Document ID")
+	* https://developers.google.com/docs/api/samples/extract-text#python
