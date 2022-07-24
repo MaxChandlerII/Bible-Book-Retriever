@@ -57,6 +57,8 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 
 
 # Setting Up Google Project / API
+0. Google - Google Docs API, Python Quick Start. Used for knowing libraries to install, creating Google Project, and creating Credentials
+	* https://developers.google.com/docs/api/quickstart/python
 1. Set up Google Project
 	* https://developers.google.com/workspace/guides/create-project
 2. Enable Google Drive API & Enable Google Docs API
