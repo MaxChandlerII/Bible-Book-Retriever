@@ -59,7 +59,9 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 # Setting Up Google Project / API
 1. Set up Google Project
 	* https://developers.google.com/workspace/guides/create-project
-2. Enable Google Docs API
+2. Enable Google Drive API & Enable Google Docs API
 	* https://developers.google.com/workspace/guides/enable-apis
 3. pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 4. pip install --upgrade httplib2
+5. Create an OAuth 2.0 Client ID
+6. Download the OAuth Client in .json format, save as "credentials.json". Place in same folder as the .py file(s).
