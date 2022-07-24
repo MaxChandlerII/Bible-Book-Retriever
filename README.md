@@ -57,18 +57,18 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 
 
 # Setting Up Google Project / API
-0. Google - Google Docs API, Python Quick Start. Used for knowing libraries to install, creating Google Project, and creating Credentials
+1. Google - Google Docs API, Python Quick Start. Used for knowing libraries to install, creating Google Project, and creating Credentials
 	* https://developers.google.com/docs/api/quickstart/python
-1. Set up Google Project
+2. Set up Google Project
 	* https://developers.google.com/workspace/guides/create-project
-2. Enable Google Drive API & Enable Google Docs API
+3. Enable Google Drive API & Enable Google Docs API
 	* https://developers.google.com/workspace/guides/enable-apis
-3. pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-4. pip install --upgrade httplib2
-5. Reference this helpful blog
+4. pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+5. pip install --upgrade httplib2
+6. Reference this helpful blog
 	* https://towardsdatascience.com/how-to-load-the-content-of-a-google-document-in-python-1d23fd8d8e52
-6. Create an OAuth 2.0 Client ID
+7. Create an OAuth 2.0 Client ID
 	* https://developers.google.com/workspace/guides/create-credentials#desktop-app (see OAuth, used "Desktop Application")
-7. Download the OAuth Client in .json format, save as "credentials.json". Place in same folder as the .py file(s).
-8. Use Google's code to extract text from a Google Doc (don't forget to update w/your Doc's "Document ID")
+8. Download the OAuth Client in .json format, save as "credentials.json". Place in same folder as the .py file(s).
+9. Use Google's code to extract text from a Google Doc (don't forget to update w/your Doc's "Document ID")
 	* https://developers.google.com/docs/api/samples/extract-text#python
