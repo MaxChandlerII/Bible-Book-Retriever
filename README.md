@@ -55,7 +55,28 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 - May need to post a legal disclaimer that any Bible translation has its own legal disclaimer and terms of use that the user is responsible for knowing and following and that this tool is in no way responsible for the user's use of that copy righted material.
 - My tool itself may actually face restrictions in copy/pasting Bible translations for others to use? Perhaps when I paste any Bible translation I need to also paste that translation's legal disclaimer?
 
-
+# Removing Sensitive Data from Git Repo (ex: credentials, passwords, etc.)
+1. View Git's suggestions 
+	* https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+2. Using the BFG method:
+	* Download BFG via their website:
+		- https://rtyley.github.io/bfg-repo-cleaner/
+	* Create a new (empty) folder anywhere that is NOT in a Git repo already
+	* In the new folder run the following Git command to clone a **mirror** of your ENTIRE Git repo
+	* Git clone --mirror git://example.com/some-big-repo.git
+	* Now in your "new" folder you'll have a folder with your entire Git repo
+	* Copy/paste the BFG jar file you downloaded earlier into this "new" folder at the same level as your ENTIRE git repo folder
+	* Run the following Git cmd
+	* bfg --delete-files file_name_you_want_deleted  your-repo-name.git
+	* You'll see some info appear on your terminal about the cleaning BFG just did. View the report which will be in a folder at the same level as your Git repo
+	* Run the following Git cmd
+	* cd your-repo-name.git
+	* Run the following Git cmd
+	* git reflog expire --expire=now --all && git gc --prune=now --aggressive
+	* Run the following Git cmd
+	* git push
+	* Now your Remote repo will be updated with the cleaning even though you'll still see those commits in your history, the commits will be empty.
+	
 # Setting Up Google Project / API
 1. Google - Google Docs API, Python Quick Start. Used for knowing libraries to install, creating Google Project, and creating Credentials
 	* https://developers.google.com/docs/api/quickstart/python
