@@ -18,32 +18,10 @@ Recursively extracts the text from a Google Doc.
 from __future__ import print_function
 
 import googleapiclient.discovery as discovery
-from httplib2 import Http
-from oauth2client import client
-from oauth2client import file
-from oauth2client import tools
+from google_OAuth import G_OAuth
 
-SCOPES = 'https://www.googleapis.com/auth/documents.readonly'
 DISCOVERY_DOC = 'https://docs.googleapis.com/$discovery/rest?version=v1'
 DOCUMENT_ID = '178vGY1f5Y4KXqjY1ZyUIp_pYXZZtJnCnZj47AO-K0WY'
-
-
-def get_credentials():
-    """Gets valid user credentials from storage.
-
-    If nothing has been stored, or if the stored credentials are invalid,
-    the OAuth 2.0 flow is completed to obtain the new credentials.
-
-    Returns:
-        Credentials, the obtained credential.
-    """
-    store = file.Storage('token.json')
-    credentials = store.get()
-
-    if not credentials or credentials.invalid:
-        flow = client.flow_from_clientsecrets('credentials.json', SCOPES)
-        credentials = tools.run_flow(flow, store)
-    return credentials
 
 def read_paragraph_element(element):
     """Returns the text in the given ParagraphElement.
@@ -71,8 +49,7 @@ def read_structural_elements(elements):
             for elem in elements:
                 text += read_paragraph_element(elem)
         elif 'table' in value:
-            # The text in table cells are in nested Structural Elements and tables may be
-            # nested.
+            # The text in table cells are in nested Structural Elements and tables may be nested.
             table = value.get('table')
             for row in table.get('tableRows'):
                 cells = row.get('tableCells')
@@ -87,8 +64,7 @@ def read_structural_elements(elements):
 
 def main():
     """Uses the Docs API to print out the text of a document."""
-    credentials = get_credentials()
-    http = credentials.authorize(Http())
+    http = G_OAuth.get_authorized_http()
     docs_service = discovery.build('docs', 'v1', http=http, discoveryServiceUrl=DISCOVERY_DOC)
     doc = docs_service.documents().get(documentId=DOCUMENT_ID).execute()
     doc_content = doc.get('body').get('content')
