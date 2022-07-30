@@ -10,6 +10,8 @@ This project will retrieve a book of the Bible, in the translation you desire, f
 
 ## Set user.name and user.email per Repo
    * https://www.git-tower.com/learn/git/faq/change-author-name-email
+   * git config user.name ______
+   * git config user.email ___ncsu___
 
 ## Checking credentials entered
 	* git config --list --show-origin
@@ -95,4 +97,3 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* https://developers.google.com/docs/api/samples/extract-text#python
 10. NEXT STEP: Pick up with this link on extracting text from Google Doc, saving to a .txt file and then using it.
 	* https://towardsdatascience.com/how-to-load-the-content-of-a-google-document-in-python-1d23fd8d8e52
-	* remove later
