@@ -91,29 +91,35 @@ def main():
     num_occurances = 0
     gen1 = []
 
-    if not os.path.isfile(local_doc):
-        print('Local File does NOT exist.')
-    else:
+    if os.path.isfile(local_doc):
         '''
         file    =   _io.TextIOWrapper
         line    =   str
         word    =   tuple
-        gen1    =   list
-        gen1[i] =   tuple
+        gen1[]  =   list
+        gen1[i] =   tuple (I don't think this is true anymore now that I separate the # from the Text and only store the Text in gen1[] )
         '''
         with open('local_doc.txt','r') as file: 
             for line in file:
                 for word in enumerate(line.split()):
-                    gen1.append(word)
+                    temp_num, temp_text = word #word is a Tuple. Separate the # from the Text.
+                    gen1.append( temp_text ) #Store the Text in gen1[] list. 
+                    #Perhaps there's something useful with the #
 
-            print('length of gen1[] = %s' %str(len(gen1)) )
+            print('length of gen1[] = %s' %str(len(gen1)) ) 
+
+            num_occurances = gen1.count( word_to_match )
+            print(num_occurances)
 
             # for line in file:
-                # for word in enumerate( line.split() ):
-                    # print('length of gen1[] = %s' %str(len(gen1)) )
+            #     for word in enumerate( line.split() ):
                     # num_occurances = gen1.count( word )
-                    # print('length of gen1[] = %s' %str(len(gen1)) )
+                    # num_occurances = gen1.count( word_to_match )
+                    # print(num_occurances)
+                    # print( "word = '%s' appears %s in gen1[]" %word %num_occurances )
                     # print("word = '{cword}' appears {times} in gen1[]".format(cword=word, times=str(num_occurances) ) ) 
+    else:
+        print('Local File does NOT exist.')
 
 if __name__ == '__main__':
     main()
