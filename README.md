@@ -43,6 +43,16 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* May be venturing too far into a full-fledged tool like Logos or a tool like a Concordance. But, perhaps I offer a feature where the user can type a word or phrase and then the tool underlines/italicizes/bolds/sets font color/highlights that word/phrase all throughout the text they've requested? 
 	* Furthermore, perhaps I also provide a list of verses in which that word/phrase appears?
 
+## Nuanced Ways of Biblical Authors Giving Signs
+	* Sometimes Biblical Authors want to get your attention not by exactly repeating a word but by using words/phrases that are very similar to the original. This will take some pondering on how to detect such an instance and finding examples like in Gen. 3 when the man & the woman take the fruit because they saw it was good and then looking in Gen. 6 at the sons of god who took the women because they saw it was good.
+	* Sometimes Bibilical Authors also don't exactly repeat word "A" but instead use a word later on that is:
+		- the homophone of word "A"
+		- spelled with the same letters as word "A" but arranged in a differen order (outcry & ____ in BP "God's Spirit in the Flood Narrative - Genesis E2 ~30mins)
+		- spelled w/the same letters as word "A" but now a different "tense" (if that's a thing in Hebrew)
+	* Algorithm that uses a point system to see if a phrase is repeated elsewhere in a chapter/book/Bible.
+	* Look for words that are only used a few times in Scripture. Maybe set a threshold? Like < 10? Not sure what the threshold should be. Reason for this suggestion, in Gen 2.5 and 21.15 the word for bush (H7880) is used only 4 times in Scripture and in Gen 21.15 up to that point it'd only been used once, in the Garden of Eden narrative, thus intentionally pointing the reader back to that story as they read about Hagar and Ishmael.
+	* Is there several "Contrasting" verses followed by a non-Contrasting verse? If so, you may be looking at one unit and there may be another unit behind it.
+
 ## Ease of Use
 	* In order to make it simple for others to use, I think it the final product should be an executable (.exe) that others can download.
 	
