@@ -23,6 +23,7 @@ import googleapiclient.discovery as discovery
 from google_OAuth import G_OAuth
 import pandas as pd
 import os, re
+#import thefuzz #fuzzywuzzy. Based on python-Levenshtein (pip install that lib). If installation problems also "pip install python-Levenshtein-wheels"
 
 DISCOVERY_DOC = 'https://docs.googleapis.com/$discovery/rest?version=v1'
 DOCUMENT_ID = '1MRqv0fppujBvQwmiYQ18InDG5S-RE5J0rGyfiY7zmE4'
