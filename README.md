@@ -29,6 +29,8 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 ## Headers
    * Info on creating Headers. Could be useful for setting each Chapter # as a Header, to provide an Outline to easily navigate the document with.
 
+## Extract Content from a Google Doc
+	* https://towardsdatascience.com/how-to-load-the-content-of-a-google-document-in-python-1d23fd8d8e52
 
 # FEATURE IDEAS
 ## Removing Verse #'s
@@ -52,6 +54,18 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* Algorithm that uses a point system to see if a phrase is repeated elsewhere in a chapter/book/Bible.
 	* Look for words that are only used a few times in Scripture. Maybe set a threshold? Like < 10? Not sure what the threshold should be. Reason for this suggestion, in Gen 2.5 and 21.15 the word for bush (H7880) is used only 4 times in Scripture and in Gen 21.15 up to that point it'd only been used once, in the Garden of Eden narrative, thus intentionally pointing the reader back to that story as they read about Hagar and Ishmael.
 	* Is there several "Contrasting" verses followed by a non-Contrasting verse? If so, you may be looking at one unit and there may be another unit behind it.
+
+## Contrasting Verses
+	* Generate a list of contrasting words (wicked vs righteous). If a verse contains those contrasting words, it may be a contrasting verse.
+
+## Lens Mode
+	* For anyone that may want the power of a billion transistors helping them parse through thousands and thousands of lines of Scripture, they can activate a Lens Mode that'll display the Scripture they're reading in the GUI.
+	* In Lens Mode there'll be little superscript icons trailing words or verses. The user can click on these to view the discovery Lens made.
+	* Examples of what Lens may discover:
+		* Word Repetition
+		* Phrase Repetition
+		* Contrasting Ideas
+		* 
 
 ## Ease of Use
 	* In order to make it simple for others to use, I think it the final product should be an executable (.exe) that others can download.
@@ -105,5 +119,11 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 8. Download the OAuth Client in .json format, save as "credentials.json". Place in same folder as the .py file(s).
 9. Use Google's code to extract text from a Google Doc (don't forget to update w/your Doc's "Document ID")
 	* https://developers.google.com/docs/api/samples/extract-text#python
-10. NEXT STEP: Pick up with this link on extracting text from Google Doc, saving to a .txt file and then using it.
-	* https://towardsdatascience.com/how-to-load-the-content-of-a-google-document-in-python-1d23fd8d8e52
+
+# NEXT STEPS
+2. Review 3x website suggestions from BP to see how they fit into this.
+3. Look up NIV/KJV Concordances, specifically Prov 10:12 (covers) & Prov 10:18 (conceals). Use Ps. 29 as test.
+4. https://biblehub.com/interlinear/genesis/1.htm (Interlinear *Chapters* on Bible Hub)
+5. How NOT to Mess Up QtDesigner and PyQt5: https://youtu.be/XXPNpdaK9WA
+6. https://crossexamined.org/
+7. https://str.org/
