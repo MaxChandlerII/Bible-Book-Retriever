@@ -7,6 +7,7 @@ This project will retrieve a book of the Bible, in the translation you desire, f
    * In Git Bash push commits up (git push origin main)
    * Git Bash prompted me for credentials, opted for signing-in online (not the token option), authorized a Git Credential Manager, was prompted to enter password, was authorized (technically my Device was authorized)
       * Token option was not approved
+	* To QUIT a cmd in GIT Bash type: "q" or ":q"
 
 ## Set user.name and user.email per Repo
    * https://www.git-tower.com/learn/git/faq/change-author-name-email
