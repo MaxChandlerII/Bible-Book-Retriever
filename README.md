@@ -130,7 +130,11 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 # NEXT STEPS
 2. Review 3x website suggestions from BP to see how they fit into this.
 3. Look up NIV/KJV Concordances, specifically Prov 10:12 (covers) & Prov 10:18 (conceals). Use Ps. 29 as test.
-4. https://biblehub.com/interlinear/genesis/1.htm (Interlinear *Chapters* on Bible Hub)
-5. How NOT to Mess Up QtDesigner and PyQt5: https://youtu.be/XXPNpdaK9WA
-6. https://crossexamined.org/
-7. https://str.org/
+4. Links to view:
+	* https://biblehub.com/interlinear/genesis/1.htm (Interlinear *Chapters* on Bible Hub)
+	* How NOT to Mess Up QtDesigner and PyQt5: https://youtu.be/XXPNpdaK9WA
+	* https://crossexamined.org/
+	* https://str.org/
+5. Start threading the Python code before it's too late.
+6. 
+7. 
