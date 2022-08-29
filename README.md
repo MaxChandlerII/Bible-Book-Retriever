@@ -57,6 +57,10 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 
 ## Contrasting Verses
 	* Generate a list of contrasting words (wicked vs righteous). If a verse contains those contrasting words, it may be a contrasting verse.
+	* To find contrasting verses revisit this article about Hebrew "but" (3 types: (1) corrective, (2) adversative, or (3) contrastive).
+		* https://www.logos.com/grow/how-to-say-but-in-biblical-hebrew-a-translator-looks-at-genesis/
+		* The author of that article also created this cool spreadsheet of "but" in Genesis (type, English/Spanish/Russian)
+			* https://docs.google.com/spreadsheets/d/1TLgAdKWCRwet6Htws1TM8KkPXoCVoByN44QT40A8b2g/edit#gid=2045259943
 
 ## Lens Mode
 	* For anyone that may want the power of a billion transistors helping them parse through thousands and thousands of lines of Scripture, they can activate a Lens Mode that'll display the Scripture they're reading in the GUI.
@@ -65,7 +69,9 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 		* Word Repetition
 		* Phrase Repetition
 		* Contrasting Ideas
-		* 
+	* Specialized analysis based on the Book of the Bible in view:
+		* When reviewing Proverbs, know the style and the likely types of proverbs you'll see (comparative, contrasting, warning, long examples, etc. )
+		* When reading say, Gen, Ex, Deut, know it'll be heavily narrative, thus if you detect short lines (<10 words?) (or use a Std.Dev of the chapter/book) then you may be analyzing a poem and there's probably something very important in it.
 
 ## Ease of Use
 	* In order to make it simple for others to use, I think it the final product should be an executable (.exe) that others can download.
