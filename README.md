@@ -129,6 +129,9 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 9. Use Google's code to extract text from a Google Doc (don't forget to update w/your Doc's "Document ID")
 	* https://developers.google.com/docs/api/samples/extract-text#python
 
+# VS Code & Python
+	* To uncomment a section: CTRL+K, CTRL+U
+
 # NEXT STEPS
 2. Review 3x website suggestions from BP to see how they fit into this.
 3. Look up NIV/KJV Concordances, specifically Prov 10:12 (covers) & Prov 10:18 (conceals). Use Ps. 29 as test.
