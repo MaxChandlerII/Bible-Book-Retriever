@@ -73,6 +73,8 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* Specialized analysis based on the Book of the Bible in view:
 		* When reviewing Proverbs, know the style and the likely types of proverbs you'll see (comparative, contrasting, warning, long examples, etc. )
 		* When reading say, Gen, Ex, Deut, know it'll be heavily narrative, thus if you detect short lines (<10 words?) (or use a Std.Dev of the chapter/book) then you may be analyzing a poem and there's probably something very important in it.
+	* Side-by-Side: If there's contrasting/comparison/etc. occuring between verses/chapters OR if there's a real clear structure to the section of Scripture and if it makes sense you could create Columns in the GUI and split appropriate verses into columns to easily view side-by-side. (prob good ex's in my John/1J/2J/3J breakdowns or BP's 100pg PDF)
+	* SbS may not always make sense, but allowing the GUI to indent may help the reader visualize the structure (prob good ex's in my John/1J/2J/3J breakdowns or BP's 100pg PDF).
 
 ## Ease of Use
 	* In order to make it simple for others to use, I think it the final product should be an executable (.exe) that others can download.
