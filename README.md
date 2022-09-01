@@ -67,8 +67,8 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* For anyone that may want the power of a billion transistors helping them parse through thousands and thousands of lines of Scripture, they can activate a Lens Mode that'll display the Scripture they're reading in the GUI.
 	* In Lens Mode there'll be little superscript icons trailing words or verses. The user can click on these to view the discovery Lens made.
 	* Examples of what Lens may discover:
-		* Word Repetition
-		* Phrase Repetition
+		* Word Repetition (Algorithm: use a point system, for each repeated word give a certain # of points, very common words like 'a', 'the', 'it' worth few points, less common words in Hb. worth many points (perhaps enough to trigger the threshold), all other words a value in-btwn v-comm and v-rare words. Ex: v-comm = 1pt, v-rare = 15 pts, in-btwn 1<X<15 depending on rareity. )
+		* Phrase Repetition (ex: Tree of Life, Day of the LORD, or more complex like Gen 3.6-8 "saw...it was good...it was a delight to the eyes...it was desired...took...ate...and gave...")
 		* Contrasting Ideas
 	* Specialized analysis based on the Book of the Bible in view:
 		* When reviewing Proverbs, know the style and the likely types of proverbs you'll see (comparative, contrasting, warning, long examples, etc. )
