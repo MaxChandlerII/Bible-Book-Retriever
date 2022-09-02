@@ -1,5 +1,7 @@
 
-
+'''
+this file is a paste destination, it's not functioning as is
+'''
     word_to_match = 'God'
     num_occurances = 0
     gen1 = []

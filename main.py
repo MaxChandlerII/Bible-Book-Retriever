@@ -92,6 +92,8 @@ def main():
     local_doc = 'C:\Personal_Repos\Bible-Book-Retriever\Prov_13_ESV.txt'
 
     Text_Wrangling.rep_words_occurance(local_doc=local_doc)
+    #The csv genearted still needs addressing, see comments in rep_words_occurance( )
+    #orig_text_wrangling.py is a paste destination, it's not functioning as is
 
 if __name__ == '__main__':
     main()
