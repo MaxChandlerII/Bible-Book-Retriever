@@ -8,7 +8,7 @@ class Text_Wrangling:
     def rep_words_occurance(local_doc):
         ldoc_list = [] #Create a list for the Local Doc's content
 
-        if os.path.isfile(local_doc):
+        if os.path.isfile( local_doc ):
             '''
             file    =   _io.TextIOWrapper
             line    =   str

@@ -89,9 +89,10 @@ def main():
     #         text = [line for line in f.readlines()]
     # df = pd.DataFrame(text,columns=['text'])
 
-    local_doc = 'C:\Personal_Repos\Bible-Book-Retriever\Prov_13_ESV.txt'
+    local_doc_str = str('C:\\Personal_Repos\\Bible-Book-Retriever\\Prov_13_ESV.txt')
 
-    Text_Wrangling.rep_words_occurance(local_doc=local_doc)
+    tw = Text_Wrangling()
+    tw.rep_words_occurance(local_doc=local_doc_str)
     #The csv genearted still needs addressing, see comments in rep_words_occurance( )
     #orig_text_wrangling.py is a paste destination, it's not functioning as is
 
