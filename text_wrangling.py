@@ -1,11 +1,10 @@
-from posixpath import split
-import os, re, csv
+import os, re, csv, enum
 
 class Text_Wrangling:
     def __init__(self) -> None:
         pass
 
-    def rep_words_occurance(local_doc):
+    def rep_words_occurance(self, local_doc ):
         ldoc_list = [] #Create a list for the Local Doc's content
 
         if os.path.isfile( local_doc ):
