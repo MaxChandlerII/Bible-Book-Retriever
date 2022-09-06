@@ -20,7 +20,7 @@ class Text_Wrangling:
                 for line in file:
                     for word in enumerate(line.split()):
                         temp_num, temp_text = word #word is a Tuple. Separate the # from the Text.
-                        ldoc_list.append( temp_text ) #Store the Text in list. 
+                        re_text = re.split(r"[,;]+", temp_text)
                         #Perhaps there's something useful with the # (number)
 
                 print('length of ldoc_list[] = %s' %str(len(ldoc_list)) ) #Print length of ldoc_list string
