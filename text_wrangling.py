@@ -33,7 +33,7 @@ class Text_Wrangling:
                     num_occurances = ldoc_list.count( ldoc_list[index] )
                     # print( "word = '%s' appears %s in ldoc_list[]" %( ldoc_list[index], num_occurances) )
                     print("word = '{cword}' appears {times} in ldoc_list[]".format(cword=ldoc_list[index], times=str(num_occurances) ) )
-                    with open('word_occurance_count.csv', 'a') as f:
+                    with open('word_occurance_count.csv', 'a', newline='', encoding='utf-8') as f:
                         writer = csv.writer(f)
                         tempList = []
                         '''
@@ -57,7 +57,5 @@ class Text_Wrangling:
                         (4) If you already wrote a word in the .csv, then don't write it again, since it'll be duplicate data.
 
                         '''
-
-
         else:
             print('Local File does NOT exist.')
