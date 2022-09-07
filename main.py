@@ -16,24 +16,17 @@
 Recursively extracts the text from a Google Doc.
 """
 from __future__ import print_function
-import enum
-from posixpath import split
 
-import googleapiclient.discovery as discovery
-from google_OAuth import G_OAuth
-import pandas as pd
-import os, re
 #import thefuzz #fuzzywuzzy. Based on python-Levenshtein (pip install that lib). If installation problems also "pip install python-Levenshtein-wheels"
-import csv
 from text_wrangling import Text_Wrangling
 
 DISCOVERY_DOC = 'https://docs.googleapis.com/$discovery/rest?version=v1'
 DOCUMENT_ID = '1MRqv0fppujBvQwmiYQ18InDG5S-RE5J0rGyfiY7zmE4'
 
 def main():
+    '''
     local_doc = 'local_doc.txt'
     """Uses the Docs API to print out the text of a document."""
-    '''
     http = G_OAuth.get_authorized_http()
     docs_service = discovery.build('docs', 'v1', http=http, discoveryServiceUrl=DISCOVERY_DOC)
     doc = docs_service.documents().get(documentId=DOCUMENT_ID).execute()
