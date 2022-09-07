@@ -16,14 +16,21 @@ class Text_Wrangling:
             ldoc_list[i] =   tuple (I don't think this is true anymore now that I separate the # from the Text and only store the Text in ldoc_list[] )
             '''
             with open(local_doc,'r') as file: 
-                for line in file:
+                for line in file:   
                     for word in enumerate(line.split()):
                         temp_num, temp_text = word #word is a Tuple. Separate the # from the Text.
                         re_text = re.split(r"[,;.]+", temp_text)
+                        '''
+                        TODO: Detect the hyperlinks that show alternate translations that appear
+                        like [a], perhaps say look for opening bracket, then only 1 char, then a closing
+                        bracket, if you detect that then remove it. The reason for this approach is in John
+                        and Mark there are many verses within brackets bec of their debate 
+                        '''
                         ldoc_list.append( re_text[0] ) #Store the Text in list.
-                        #Perhaps there's something useful with the # (number)
+                        # print('temp_reExp_rtrn = %s' %temp_reExp_rtrn)
+                        #TODO: Perhaps there's something useful with the # (number)
 
-                print('length of ldoc_list[] = %s' %str(len(ldoc_list)) ) #Print length of ldoc_list string
+                # print('length of ldoc_list[] = %s' %str(len(ldoc_list)) ) #Print length of ldoc_list string
 
                 '''
                 (1) Loop through ldoc_list list
@@ -33,7 +40,7 @@ class Text_Wrangling:
                 for index in range( len(ldoc_list) ):
                     num_occurances = ldoc_list.count( ldoc_list[index] )
                     # print( "word = '%s' appears %s in ldoc_list[]" %( ldoc_list[index], num_occurances) )
-                    print("word = '{cword}' appears {times} in ldoc_list[]".format(cword=ldoc_list[index], times=str(num_occurances) ) )
+                    # print("word = '{cword}' appears {times} in ldoc_list[]".format(cword=ldoc_list[index], times=str(num_occurances) ) )
                     with open('word_occurance_count.csv', 'a', newline='', encoding='utf-8') as f:
                         writer = csv.writer(f)
                         tempList = []
