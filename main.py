@@ -30,45 +30,6 @@ from text_wrangling import Text_Wrangling
 DISCOVERY_DOC = 'https://docs.googleapis.com/$discovery/rest?version=v1'
 DOCUMENT_ID = '1MRqv0fppujBvQwmiYQ18InDG5S-RE5J0rGyfiY7zmE4'
 
-def read_paragraph_element(self, p_element):
-    """Returns the text in the given ParagraphElement.
-
-        Args:
-            element: a ParagraphElement from a Google Doc.
-    """
-    text_run = p_element.get('textRun')
-    if not text_run:
-        return ''
-    return text_run.get('content')
-
-
-def read_structural_elements(self, s_elements):
-    """Recurses through a list of Structural Elements to read a document's text where text may be
-        in nested elements.
-
-        Args:
-            elements: a list of Structural Elements.
-    """
-    text = ''
-    for value in s_elements:
-        if 'paragraph' in value:
-            elements = value.get('paragraph').get('elements')
-            for elem in elements:
-                text += read_paragraph_element(self,p_element=elem)
-        elif 'table' in value:
-            # The text in table cells are in nested Structural Elements and tables may be nested.
-            table = value.get('table')
-            for row in table.get('tableRows'):
-                cells = row.get('tableCells')
-                for cell in cells:
-                    text += read_structural_elements(self, s_elements=cell.get('content'))
-        elif 'tableOfContents' in value:
-            # The text in the TOC is also in a Structural Element.
-            toc = value.get('tableOfContents')
-            text += read_structural_elements(self, s_elements=toc.get('content'))
-    return text
-
-
 def main():
     local_doc = 'local_doc.txt'
     """Uses the Docs API to print out the text of a document."""
