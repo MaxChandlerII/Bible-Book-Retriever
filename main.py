@@ -30,19 +30,19 @@ from text_wrangling import Text_Wrangling
 DISCOVERY_DOC = 'https://docs.googleapis.com/$discovery/rest?version=v1'
 DOCUMENT_ID = '1MRqv0fppujBvQwmiYQ18InDG5S-RE5J0rGyfiY7zmE4'
 
-def read_paragraph_element(element):
+def read_paragraph_element(self, p_element):
     """Returns the text in the given ParagraphElement.
 
         Args:
             element: a ParagraphElement from a Google Doc.
     """
-    text_run = element.get('textRun')
+    text_run = p_element.get('textRun')
     if not text_run:
         return ''
     return text_run.get('content')
 
 
-def read_structural_elements(elements):
+def read_structural_elements(self, s_elements):
     """Recurses through a list of Structural Elements to read a document's text where text may be
         in nested elements.
 
@@ -50,22 +50,22 @@ def read_structural_elements(elements):
             elements: a list of Structural Elements.
     """
     text = ''
-    for value in elements:
+    for value in s_elements:
         if 'paragraph' in value:
             elements = value.get('paragraph').get('elements')
             for elem in elements:
-                text += read_paragraph_element(elem)
+                text += read_paragraph_element(self,p_element=elem)
         elif 'table' in value:
             # The text in table cells are in nested Structural Elements and tables may be nested.
             table = value.get('table')
             for row in table.get('tableRows'):
                 cells = row.get('tableCells')
                 for cell in cells:
-                    text += read_structural_elements(cell.get('content'))
+                    text += read_structural_elements(self, s_elements=cell.get('content'))
         elif 'tableOfContents' in value:
             # The text in the TOC is also in a Structural Element.
             toc = value.get('tableOfContents')
-            text += read_structural_elements(toc.get('content'))
+            text += read_structural_elements(self, s_elements=toc.get('content'))
     return text
 
 
@@ -77,8 +77,8 @@ def main():
     docs_service = discovery.build('docs', 'v1', http=http, discoveryServiceUrl=DISCOVERY_DOC)
     doc = docs_service.documents().get(documentId=DOCUMENT_ID).execute()
     doc_content = doc.get('body').get('content')
-    # print(read_structural_elements(doc_content))
-    text = read_structural_elements(doc_content)
+    # print(read_structural_elements(s_elements=doc_content))
+    text = read_structural_elements(s_elements=doc_content)
     # save it into a Local File
     with open("local_doc.txt","w") as local_doc:
         local_doc.write(text)
