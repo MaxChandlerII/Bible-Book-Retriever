@@ -46,6 +46,10 @@ https://stackabuse.com/reading-and-writing-ms-word-files-in-python-via-python-do
 	* May be venturing too far into a full-fledged tool like Logos or a tool like a Concordance. But, perhaps I offer a feature where the user can type a word or phrase and then the tool underlines/italicizes/bolds/sets font color/highlights that word/phrase all throughout the text they've requested? 
 	* Furthermore, perhaps I also provide a list of verses in which that word/phrase appears?
 
+## Similar but Slightly Different Repeating Words
+	* Proverbs 13 has 3 verses that repeat ideas linked together, but that aren't explicitly all tied together by a single repeated word.
+		- The similarity is that the wise will listen to advice, instruction, correction, etc. but the fool will not.
+
 ## Nuanced Ways of Biblical Authors Giving Signs
 	* Sometimes Biblical Authors want to get your attention not by exactly repeating a word but by using words/phrases that are very similar to the original. This will take some pondering on how to detect such an instance and finding examples like in Gen. 3 when the man & the woman take the fruit because they saw it was good and then looking in Gen. 6 at the sons of god who took the women because they saw it was good.
 	* Sometimes Bibilical Authors also don't exactly repeat word "A" but instead use a word later on that is:
