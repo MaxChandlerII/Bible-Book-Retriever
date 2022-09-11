@@ -131,3 +131,4 @@ dmypy.json
 # Google Project Credential-Related files
 credentials.json
 token.json
+shims/
