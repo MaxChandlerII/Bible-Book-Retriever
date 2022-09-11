@@ -43,11 +43,11 @@ def main():
     #         text = [line for line in f.readlines()]
     # df = pd.DataFrame(text,columns=['text'])
 
-    local_doc_str = str('C:\\Personal_Repos\\Bible-Book-Retriever\\Prov_13_ESV.txt')
-    
+    local_doc_str = str('C:\\Personal_Repos\\Bible-Book-Retriever\\Prov_14_ESV.txt')
+
     tw = Text_Wrangling()
     tw.rep_words_occurance(local_doc=local_doc_str)
-    # print('argg')
+    print('asddedwggadsfsda')
 
 if __name__ == '__main__':
     main()
